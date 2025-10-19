@@ -1,0 +1,61 @@
+/* src/index.css */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* --- Light Mode Palette (Default) --- */
+  --bg-primary: #ffffff;         /* Main background */
+  --bg-secondary: #f3f4f6;       /* Lighter elements, AI bubble */
+  --bg-tertiary: #ffffff;        /* Cards, inputs */
+  --text-primary: #111827;       /* Dark text */
+  --text-secondary: #4b5563;     /* Lighter text */
+  --border-color: #e5e7eb;       /* Subtle borders */
+  --accent-primary: #4f46e5;     /* Main brand color (indigo) */
+  --accent-text: #ffffff;        /* Text on brand color */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: #111827;         /* Dark main background */
+    --bg-secondary: #1f2937;       /* Darker elements, AI bubble */
+    --bg-tertiary: #374151;        /* Cards, inputs */
+    --text-primary: #f9fafb;       /* Light text */
+    --text-secondary: #d1d5db;     /* Lighter text */
+    --border-color: #374151;       /* Dark borders */
+    --accent-primary: #6366f1;     /* Lighter brand color */
+    --accent-text: #ffffff;
+  }
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+#root {
+  width: 100%;
+  height: 100vh; /* Make app fill the whole screen */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  transition: all 0.2s ease;
+}

@@ -1,0 +1,61 @@
+# Node modules
+node_modules/
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Coverage and test outputs
+coverage/
+.nyc_output/
+
+# Supabase local dev data
+.supabase/
+
+# Cloudinary cache or uploads (if any local temp)
+uploads/
+tmp/
+
+# React-specific
+*.cache
+.eslintcache
+
+# TypeScript
+*.tsbuildinfo
+
+# Misc
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
